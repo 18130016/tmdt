@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tmdt-final": {
+      "hosting": {
+        "tmdt-agl": [
+          "tmdt-final"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tmdt-final"
+  }
+}

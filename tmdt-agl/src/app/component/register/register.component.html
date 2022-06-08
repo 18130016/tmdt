@@ -1,0 +1,77 @@
+
+<div class="page-content">
+  <div class="row">
+
+    <form [formGroup]="registerForm"(ngSubmit)="checkuser()"  class="form-register" id="form-register">
+
+      <div class="col-md-6" style="margin: 10px auto ">
+
+        <div id="register-form" class="login-register-form-wrap">
+          <br>
+          <br>
+          <div class="row">
+
+            <div class="md-5 col-md-6">
+                <label for="email">Email*</label>
+                <input formControlName="email" type="email" placeholder="Nhập email" class="form-control" id="email" name="email"
+                       required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" >
+                <em  class="resultName" style="color: red" >{{validate.mEmail}}</em>
+              </div>
+
+            <div class="md-5 col-md-6">
+              <label  for="fullName">Họ và tên*</label>
+              <input formControlName="fullname" type="text" placeholder="Nhập họ và tên" class="form-control" id="fullName"
+                     name="fullName" required  >
+              <em  class="resultName" style="color: red" >{{validate.mFullname}}</em>
+            </div>
+
+            <!-- <div class="md-5 col-md-6">
+              <label >Tên đăng nhập*</label>
+              <input formControlName="username" type="text" placeholder=" Nhập tên đăng nhập" class="form-control"
+                     name="userName" required maxlength="20" title="Enter username up to 20 characters">
+              <em  class="resultName" style="color: red" >{{validate.mUser}}</em>
+            </div> -->
+
+            <div class="md-5 col-md-6">
+              <label for="password">Mật khẩu*</label>
+              <input formControlName="password" type="password" placeholder="Nhập mật khẩu" class="form-control" id="password"
+                     name="password" required minlength="6" maxlength="18" title=" Password length from 6 to 18 characters" >
+              <em  class="resultName" style="color: red" >{{validate.mPass}}</em>
+            </div>
+            <div class="md-5 col-md-6">
+              <label for="confirm_password">Xác nhận mật khẩu*</label>
+              <input type="password" placeholder="Xác nhận mật khẩu" class="form-control"
+                     (keyup)="confirmPass()"
+                     id="confirm_password" name="confirm_password" required minlength="6" maxlength="18" title="Enter the password">
+              <em  class="resultName" style="color: red" >{{validate.mConfirmPass}}</em>
+
+            </div>
+
+            <div class="md-5 col-md-6">
+                <label for="phone"> Số điện thoại*</label>
+                <input formControlName="phone" type="tel" placeholder="Nhập số điện thoại" class="form-control" name="phone" id="phone"
+                       required pattern="(\+84|0)\d{9,10}" title="Enter your phone number" >
+                <em  class="resultName" style="color: red" >{{validate.mPhone}}</em>
+  
+              </div>
+
+
+            <div class="md-5 col-md-6">
+              <label for="address">Địa chỉ*</label>
+              <input formControlName="address"type="text" placeholder="Nhập địa chỉ" id="address" class="form-control" name="address"
+                     required maxlength="150">
+              <em  class="resultName" style="color: red" >{{validate.mAddress}}</em>
+            </div>
+
+            <div class="col-md-3" style="text-align: center; padding-bottom: 20px; margin: auto ; margin-top: 20px;">
+              <input type="hidden" value="register" name="action"/>
+              <input id="register" class="col-12 btn" type="submit" value="Đăng ký">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

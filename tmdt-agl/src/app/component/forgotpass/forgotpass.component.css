@@ -1,0 +1,12 @@
+.row{
+    justify-content: center; 
+}
+.col-md-4{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
