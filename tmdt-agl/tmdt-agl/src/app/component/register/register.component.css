@@ -1,0 +1,141 @@
+rm-register .steps {
+    margin-bottom: 33px;
+  }
+  .form-register .steps ul {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    list-style: none;
+    padding-left: 0;
+  }
+  .form-register .steps li,
+  .form-register .steps li.current {
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    position: relative;
+    padding-bottom: 3px;
+    padding-right: 63px;
+  }
+  .form-register .steps li:last-child {
+    padding-right: 0;
+  }
+  .form-register .steps li .current-info {
+    display: none;
+  }
+  .form-register .steps li::before {
+    position: absolute;
+    content: "";
+    background: #7fe2e2;
+    width: 168px;
+    height: 6px;
+    top: 20%;
+    left: 47%;
+  }
+  .form-register .steps li:last-child::before {
+    content: none;
+  }
+  .form-register .steps li.current::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    background: #4094de;
+    top: 100%;
+    left: 25%;
+  }
+  .form-register .steps li a {
+    text-decoration: none;
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+  }
+  .form-register .steps li a .title {
+    text-align: center;
+  }
+  .form-register .steps li a .title span {
+    display: block;
+    font-size: 16px;
+  }
+  .form-register .steps li a .title .step-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #4094de;
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    color: #4094de;
+    font-size: 20px;
+  }
+  .form-register .steps li a .step-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .form-register .steps li.current a .step-icon,
+  .form-register .steps li.current a:active .step-icon,
+  .form-register .steps .done::before,
+  .form-register .steps li.done a .step-icon,
+  .form-register .steps li.done a:active .step-icon {
+    background: #6eba2a;
+  }
+  .form-register .steps li.current a .step-icon,
+  .form-register .steps li.current a:active .step-icon {
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+  }
+  .form-register .steps li a .step-number {
+    color: #4094de;
+    font-weight: 400;
+    padding: 17px 0 8px;
+  }
+  .form-register .steps li a .step-text {
+    color: #4094de;
+    font-weight: 600;
+    padding-bottom: 8px;
+  }
+  .form-register .content {
+    background: #359bfa;
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 32px 115px 23px 75px;
+  }
+  .form-register .content h2 {
+    display: none;
+  }
+  input:invalid {
+    border: 2px solid #de9a9a;
+  }
+  
+  input:valid {
+    border: 2px solid #00aec9;
+  }
+  
